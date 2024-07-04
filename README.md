@@ -1,4 +1,12 @@
 ## To see database
 - make sure docker is running
+- docker exec -it postgres bash
 - psql -U user (postgres_user in docker-compose.yml)
 - \l
+- to create new database: CREATE DATABASE <name>
+- to connect to database: \c <name>
+- to see list of relations: \dt
+- to see all list of relations: \d
+- to get all columns: select * from <name>;
+- to see table public.customer: \d customer
+- to add: INSERT INTO customer (id, name, email, age) -> VALUES
